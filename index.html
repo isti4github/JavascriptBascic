@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- add icon link -->
+    <link rel = "icon" href ="images/pic_bulbon.gif" type = "image/x-icon">
     <title>Jaja Script Practice</title>
 
     <link rel="stylesheet" href="style.css" ></link>
@@ -19,6 +21,53 @@
       <div class="container main">
 
         <h1 class="text-center mt-5">Java Script Practice</h1>
+
+        <button type="button" class="btn btn-info" onclick="msg()">Click</button>
+
+       <!---------------------------------------------------------------->
+        <h2>Change HTML element</h2>
+
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button"  class="btn btn-info"  onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+       
+       
+        <h2>Change HTML element using function</h2>
+        <p id="demo1">JavaScript can change HTML content.</p>
+
+        <button type="button"  class="btn btn-info"  onclick="changecontent()">Click Me!</button>
+        <!---------------------------------------------------------------->
+
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button class="btn btn-info" onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+
+        <button class="btn btn-info" onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+
+
+        <!----------------------------------------------------------------->
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image using function single fn can do both.</p>
+
+        <button class="btn btn-info" id="on" onclick="imageChange(this.id)">Turn on the light</button>
+
+        <img id="myImagefn" src="images/pic_bulboff.gif" style="width:100px">
+
+        <button class="btn btn-info" id="off" onclick="imageChange(this.id)">Turn off the light</button>
+
+
+        <!----------------------------------------------------------------->
+
+
+       
+
+
+       
+       
+        <h6 class="mt-2">if else input handling and function calling return valu to html</h6>
 
 
 
